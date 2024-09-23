@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    cursor: pointer;
+    width: 90px;
+    height: 50px;
+}
+
+header .company-name {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+  transition: color 0.3s;
+}
+
+header .company-name:hover {
+  color: #c0c0c0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust for header height */
+    margin-top: 100px; /* Same as header height */
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.left-section:hover, .right-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.left-box, .right-box {
+    padding: 20px;
+}
+
+.left-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.left-box p {
+    margin-bottom: 8px;
+}
+
+.right-box h3 {
+    margin-top: 0;
+}
+
+.right-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right-box ul li {
+    margin-bottom: 10px;
+}
+
+#remarks {
+    width: calc(100% - 20px);
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn{
+	0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+footer {
+	font-size:20px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out; /* Add this line for animation */
+    
+}
+
+.footer-link {
+    color: #333;
+    text-decoration: blink;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #555;
+}

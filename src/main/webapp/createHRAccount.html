@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Create HR Account</title>
+    <link rel="stylesheet" href="createHRAccount.css">
+</head>
+<body>
+    <header>
+        <img src="images/tata_logo.png" alt="Logo" onclick="window.location.href='https://www.tsdpl.in/'">
+        <div class="company-name">TSDPL (Tata Steel Downstream Product Limited)</div>
+    </header>
+    <div class="container">
+        <div class="box">
+                <p>CREATE HR ACCOUNT</p>
+            <main>
+                <form action="createHRAccountServlet" method="POST">
+                    <label for="hrname">HR Name:</label>
+                    <input type="text" id="hrname" name="hrname" required><br>
+                    
+                    <label for="hrid">HR ID:</label>
+                    <input type="text" id="hrid" name="hrid"  max="9999" required><br>
+                    
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" name="department" required><br>
+                    
+                    <label for="doj">Date of Joining:</label>
+                    <input type="date" id="doj" name="doj" required><br>
+                    
+                    <label for="phone">Phone No:</label>
+                    <input type="text" id="phone" name="phone" max="9999999999" required><br>
+                    
+                    <button type="submit">Create Account</button>
+                </form>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            Copyright: <a href="https://www.linkedin.com/in/rohitmishra0/" class="footer-link">Rohit Mishra</a> & 
+            <a href="https://www.linkedin.com/in/ayush-kumar-tiwary-26525321b/" class="footer-link">Ayush Tiwary</a>
+        </div>
+    </footer>
+</body>
+</html>

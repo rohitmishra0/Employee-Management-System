@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>TSDPL Login Page</title>
+    <link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/tata_logo.png" alt="Logo" onclick="window.location.href='https://www.tsdpl.in/'">
+        <div class="company-name">TSDPL (Tata Steel Downstream Product Limited)</div>
+    </header>
+    <div class="container">
+        <h1>TSDPL Login Page</h1>
+        <main>
+            <h2>Please select your role:</h2>
+            <div class="login-container">
+                <div class="login-box">
+                    <h3>Employee Login <img src="images/arrow.png" alt="Arrow"></h3>
+                    <form action="LoginServlet" method="POST">
+                        <input type="hidden" name="role" value="Employee">
+                        <label for="empid">Employee ID:</label>
+                        <input type="text" id="empid" name="empid" max="9999" required><br>
+                        <label for="empphone">Phone No:</label>
+                        <input type="text" id="empphone" name="empphone" max="9999999999" required><br>
+                        <button type="submit">Login</button> 
+                    </form>
+                    <a href="createEmployeeAccountServlet">Create new Employee account</a>
+                </div>
+                <div class="login-box">
+                    <h3>HR Login <img src="images/arrow.png" alt="Arrow"></h3>
+                    <form action="LoginServlet" method="POST">
+                        <input type="hidden" name="role" value="HR">
+                        <label for="hrid">HR ID:</label>
+                        <input type="text" id="hrid" name="hrid" max="9999" required><br>
+                        <label for="hrphone">Phone No:</label>
+                        <input type="text" id="hrphone" name="hrphone" max="9999999999" required><br>
+                        <button type="submit">Login</button>
+                    </form>
+                    <a href="createHRAccount.html">Create new HR account</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
